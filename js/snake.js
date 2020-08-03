@@ -5,7 +5,7 @@ const snakeBody = [
     {x: 11, y: 11}
 ]
 let newSegments = 0;
-let score = 0;
+export let score = 0;
 
 export function update() {
     addSegments();

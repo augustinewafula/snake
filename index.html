@@ -30,18 +30,30 @@
             background-color: hsl(50, 100%, 50%);
             border: .25vmin solid black;
         }
-        h3{
+        #high-score-title{
             color: #fff;
             position: absolute;
         }
-        @media screen and (max-width: 420px) {
-            h3{
+        #score-title{
+            color: #fff;
+            position: absolute;
+        }
+        @media screen and (max-width: 480px) {
+            #score-title{
+                top: 45px;
+            }
+            #high-score-title{
                 top: 20px;
             }
         }
         @media screen and (min-width: 480px) {
-            h3{
+            #high-score-title{
+                top: 170px;
                 left: 140px;
+            }
+            #score-title{
+                left: 140px;
+                top: 200px;
             }
         }
     </style>
@@ -49,7 +61,8 @@
     <script src="js/swiped-events.js"></script>
 </head>
 <body>
-    <h3>Score: <span id="score">0</span></h3>
+    <h3 id="high-score-title">High Score: <span id="high-score">0</span></h3>
+    <h3 id="score-title">Score: <span id="score">0</span></h3>
     <div id="game-board"></div>
 </body>
 </html>
