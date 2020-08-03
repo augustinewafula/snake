@@ -13,7 +13,7 @@ function main(currentTime) {
             setHightScore(score);
         }
         if (confirm("You lost. Your score is "+ score +" Press OK to restart.")) {
-            window.location = "/";            
+            location.reload();           
         }
         return;
     }
