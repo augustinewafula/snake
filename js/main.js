@@ -12,7 +12,7 @@ function main(currentTime) {
         if (score > highScore) {
             setHightScore(score);
         }
-        if (confirm("You lost. Your score is "+ score +" Press OK to restart.")) {
+        if (confirm("You lost. Your score is "+ score +". Press OK to restart.")) {
             location.reload();           
         }
         return;
