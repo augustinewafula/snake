@@ -1,6 +1,7 @@
 # Snake
 
 Snake is a simple game created with html, css and js.
+Play it at https://augustinewafula.github.io/snake/
 
 ## Installation
 
